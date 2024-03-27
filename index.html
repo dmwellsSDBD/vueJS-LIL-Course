@@ -14,7 +14,9 @@
 
 
     <div id="app">
-      <h1>{{ name }}</h1>
+      <h2>{{ name }}</h2>
+      <p>{{ description }}</p>
+      <div class="h3">${{price}}</div>
     </div>
   
     <hr>
@@ -40,7 +42,10 @@
       createApp({
         data() {
           return {
-            name: 'Bamboo Thermal Ski Coat',
+            "name": 'Bamboo Thermal Ski Coat',
+            "description": "You'll be the most environmentally conscious skier on the slopes - and the most stylish - wearing our fitted bamboo thermal ski coat, made from organic bamboo with recycled plastic down fillingt.",
+            "imgSrc": "https://hplussport.com/wp-content/uploads/2016/12/ski-coat_Lynda_29940ljpg".,
+            "price": 99
           }
         }
       }).mount('#app')
